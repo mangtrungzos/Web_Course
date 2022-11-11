@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./grid.css">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+        }
+        .container{
+            text-align: center;
+        }
+        .courses-item{
+            background-color: orange;
+            height: 260px;
+        }
+        h1{
+            color: #fff;
+            line-height: 260px;
+            margin: 0;
+        }
+        .category{
+            background-color: blue;
+            height: 260px;
+        }
+        ul{
+            margin-top: 0;
+            list-style: none;
+        }
+
+        @media (max-width: 1023px){
+            .courses-item{
+                margin-top: 16px;
+            }
+        }
+    </style>
+</head>
+<!-- 
+    Column: .col
+    Prefix(tiền tố) class: 
+        - c - mobile
+        - m - tablet
+        - l - pc
+--> 
+<body>
+    <div class="grid wide container">
+        <div class="row">
+            <!-- layout 4 item same website F8 -->
+            <div class="col l-3 m-0 c-0">
+                <div class="category">
+                    <ul>
+                        <li>Javascript</li>
+                        <li>HTML,CSS</li>
+                        <li>PHP</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col l-9 m-12 c-12">
+                <div class="row">
+                    <div class="col l-4 c-12 m-6">
+                        <div class="courses-item">
+                            <h1>course 1</h1>
+                        </div>
+                    </div>
+                    <div class="col l-4 c-12 m-6">
+                        <div class="courses-item">
+                            <h1>course 1</h1>
+                        </div>
+                    </div>
+                    <div class="col l-4 c-12 m-6">
+                        <div class="courses-item">
+                            <h1>course 1</h1>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- layout 5 item same website F8 -->
+            <!-- <div class="col l-4 m-0 c-0">
+                <div class="category">
+                    <ul>
+                        <li>Javascript</li>
+                        <li>HTML,CSS</li>
+                        <li>PHP</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col l-8 m-12 c-12">
+                <div class="row">
+                    <div class="col l-3 c-12 m-6">
+                        <div class="courses-item">
+                            <h1>course 1</h1>
+                        </div>
+                    </div>
+                    <div class="col l-3 c-12 m-6">
+                        <div class="courses-item">
+                            <h1>course 1</h1>
+                        </div>
+                    </div>
+                    <div class="col l-3 c-12 m-6">
+                        <div class="courses-item">
+                            <h1>course 1</h1>
+                        </div>
+                    </div>
+                    <div class="col l-3 c-12 m-6">
+                        <div class="courses-item">
+                            <h1>course 1</h1>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            
+        </div>
+    </div>
+</body>
+</html>
