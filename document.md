@@ -69,6 +69,7 @@
 
 # Thẻ a
 // Khi set width không được / Do chưa có thuộc tính display: block
+// Thẻ a được hiểu là thẻ chứa chữ / nên mặc định bị ảnh hưởng bởi thuộc tính line-height
 # Thẻ span
 // Thẻ span mặc định không apply thuộc tính css / nên có thể css cho thẻ cha để các thẻ con chứa span được kế thừa
 
