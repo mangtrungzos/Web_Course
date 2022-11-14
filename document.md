@@ -48,6 +48,8 @@
 # Khi đối tượng con vượt quá đối tượng cha trong muốn ẩn thằng con đi
 // overflow: hidden
 
+# overflow-x Làm thanh scroll kéo ngang
+- Khi đối tượng con vượt quá đối tượng cha theo chiều ngang sẽ auto tự động nó sẽ sinh ra thanh scroll để kéo ngang
 # margin
 // margin: 2px 16px 0 (trên, trái phải , dưới)
 // margin: 0 12px 0 8px (trên phải dưới trái)
@@ -143,3 +145,34 @@
 # object-fit
 // Đối với những ảnh bị ăn theo trục cross axis ta có thể sử dụng 
     object-fit: contain
+
+# Cách chọn 1 đối tượng có thể css hết tất cả
+- ctrl shift L
+
+# Cách fix lỗi hở viền dọc bên phải
+- overflow: hidden set cho thẻ cha lớn chứa tất cả các item trong đó
+- khi những đối tượng bên trong bị đẩy ra ngoài hoặc bị hở ra ngoài so với layout thì ẩn đi là được 
+
+# nav : navigation : thẻ điều hướng
+
+# display: block
+- Sử dụng display: block để set chiều ngang khi thẻ không ăn thuộc tính width height
+
+# : nth-of-type(3n)
+
+# Cách set dấu 3 chấm đối với những dòng chữ dài 
+    display: block;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+
+# Thanh scroll 
+- Xuất hiện ở thẻ ul chính là cái thẻ cho phép overflow: hidden
+    EX: Web_Shopee
+            .mobile-category__list::-webkit-scrollbar{
+                display: none;
+            }
+
+# Cách bỏ hight light của thẻ khi ấn vào 
+    -webkit-tap-hightlight-color: transparent
