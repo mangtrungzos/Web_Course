@@ -176,3 +176,25 @@
 
 # Cách bỏ hight light của thẻ khi ấn vào 
     -webkit-tap-hightlight-color: transparent
+ 
+# Cách truy cập trang bằng ip của máy tính
+- Sử dụng cùng mạng wifi
+- sử dụng địa chỉ localhost :5500
+- terminal : ipconfig
+- sau đó gõ địa chỉ ipv4 vào web sau đó đi kèm :5500
+
+# Chuyển động animation icon dịch chuyển chiều của trục Y
+- Ex: Web_sneakers
+        .scrolltotop__icon{
+            -webkit-transition: background-color linear,-webkit-transform .2s ease;;
+        }
+
+        .scrolltotop__icon:hover{
+            transform: translateY(-5px);
+        }
+
+# Thuộc tính inset trong CSS
+> inset: 0; top-right-bottom-left = 0
+> inset: 0 10px; top-bottom = 0, right-left = 10px
+>> vị trí cũng giống như margin
+>> Note: chỉ sử dụng trong position
