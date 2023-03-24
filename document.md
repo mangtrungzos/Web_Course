@@ -36,6 +36,8 @@
     border-left: 1px solid #e5e5e5;
     transform: translateY(-50%);/*50% chiều cao của chính nó*/
 
+# Thẻ br
+- Thẻ xuống dòng trong html
 # Độ tương thích đối với các trình duyệt web
 - https://caniuse.com/?search=animation
 
